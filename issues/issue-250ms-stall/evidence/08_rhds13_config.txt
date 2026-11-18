@@ -1,0 +1,27 @@
+nsslapd-accesslog-level: 256
+nsslapd-accesslog-logbuffering: on
+nsslapd-auditlog-logbuffering: on
+nsslapd-enable-turbo-mode: on
+nsslapd-errorlog-logbuffering: off
+nsslapd-idletimeout: 3600
+nsslapd-ioblocktimeout: 10000
+nsslapd-ldapilisten: on
+nsslapd-listen-backlog-size: 128
+nsslapd-listenhost: 
+nsslapd-maxbersize: 2097152
+nsslapd-maxdescriptors: 524288
+nsslapd-maxthreadsperconn: 5
+nsslapd-numlisteners: 1
+nsslapd-requiresrestart: cn=config:nsslapd-ldapilisten
+nsslapd-requiresrestart: cn=config:nsslapd-maxdescriptors
+nsslapd-requiresrestart: cn=config:nsslapd-numlisteners
+nsslapd-requiresrestart: cn=config:nsslapd-thread-pool-stats
+nsslapd-securelistenhost: 
+nsslapd-securitylog-logbuffering: on
+nsslapd-thread-pool-stats: on
+nsslapd-threadnumber: 16
+nsslapd-versionstring: 389-Directory/3.3.0
+389-ds-base-3.3.0-5.el10_3.x86_64
+389-ds-base-libs-3.3.0-5.el10_3.x86_64
+nss-3.124.0-5.el10_0.x86_64
+nspr-4.39.0-5.el10_0.x86_64

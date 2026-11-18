@@ -1,0 +1,30 @@
+# ldapclient-0 -> rhds13-m1, LDAPS 636, ldapsearch -f on ONE connection, 10,000 sequential searches
+$ time ldapsearch -x -H ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636 -b ou=People,dc=ldapbench,dc=lab -f /tmp/uids.txt "(&(uidNumber=%s)(objectClass=posixAccount))" uid > /dev/null
+client: ldapclient-0 (10.6.217.139) started 2026-11-16T14:57:02Z
+
+real	0m8.408s
+user	0m0.530s
+sys	0m0.594s
+
+# access log check on rhds13-m1 (see issue.md section 6), connection from 10.6.217.139
+connection: conn=26  searches: 10000
+gap 250.4 ms before conn=26 op=861
+gap 250.3 ms before conn=26 op=957
+gap 250.2 ms before conn=26 op=990
+gap 250.3 ms before conn=26 op=2164
+gap 250.3 ms before conn=26 op=2299
+gap 250.4 ms before conn=26 op=2706
+gap 250.4 ms before conn=26 op=3206
+gap 250.4 ms before conn=26 op=3336
+gap 250.3 ms before conn=26 op=3684
+gap 250.3 ms before conn=26 op=3696
+gap 250.4 ms before conn=26 op=4051
+gap 250.3 ms before conn=26 op=4084
+requests: 10000, gaps > 100 ms: 12 (0.12%)
+
+--- access log lines around the first gap ---
+[16/Nov/2026:09:57:02.540942470 -0500] conn=26 op=860 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=108616)(objectClass=posixAccount))" attrs="uid"
+[16/Nov/2026:09:57:02.541053536 -0500] conn=26 op=860 RESULT err=0 tag=101 nentries=1 wqtime=0.000037165 wtime=0.000103941 optime=0.000111137 etime=0.000214914
+[16/Nov/2026:09:57:02.791502289 -0500] conn=26 op=861 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=111084)(objectClass=posixAccount))" attrs="uid"
+[16/Nov/2026:09:57:02.791838123 -0500] conn=26 op=861 RESULT err=0 tag=101 nentries=1 wqtime=0.000066081 wtime=0.000203668 optime=0.000336686 etime=0.000540170
+# 12 x 250 ms = 3.0 s of the 8.4 s total run time

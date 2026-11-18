@@ -1,0 +1,92 @@
+### client ldapclient-0 -> rhds13-m1 LDAPS (network)
+uri=ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636 count=5000 think_ms=0.0
+latency ms: p50=0.371 p99=0.800 max=251.339 avg=1.135
+requests slower than 100.0 ms: 15 (0.30%)
+  msgid=54 uidNumber=52817 latency=250.7 ms sent_at=2026-11-16T14:09:57.853928+00:00
+  msgid=393 uidNumber=65147 latency=250.9 ms sent_at=2026-11-16T14:09:58.251701+00:00
+  msgid=842 uidNumber=127416 latency=251.3 ms sent_at=2026-11-16T14:09:58.709893+00:00
+  msgid=1149 uidNumber=67004 latency=250.8 ms sent_at=2026-11-16T14:09:59.096252+00:00
+  msgid=1203 uidNumber=97732 latency=250.9 ms sent_at=2026-11-16T14:09:59.367720+00:00
+  msgid=1256 uidNumber=134022 latency=251.1 ms sent_at=2026-11-16T14:09:59.642570+00:00
+  msgid=1913 uidNumber=124320 latency=251.0 ms sent_at=2026-11-16T14:10:00.178719+00:00
+  msgid=1984 uidNumber=121174 latency=251.0 ms sent_at=2026-11-16T14:10:00.456698+00:00
+  msgid=2323 uidNumber=114061 latency=250.9 ms sent_at=2026-11-16T14:10:00.881531+00:00
+  msgid=2383 uidNumber=136565 latency=250.9 ms sent_at=2026-11-16T14:10:01.167634+00:00
+  msgid=2436 uidNumber=99642 latency=251.0 ms sent_at=2026-11-16T14:10:01.447733+00:00
+  msgid=2512 uidNumber=94813 latency=250.9 ms sent_at=2026-11-16T14:10:01.737744+00:00
+  msgid=2588 uidNumber=141823 latency=251.0 ms sent_at=2026-11-16T14:10:02.029791+00:00
+  msgid=2589 uidNumber=109328 latency=250.7 ms sent_at=2026-11-16T14:10:02.280985+00:00
+  msgid=3334 uidNumber=72586 latency=251.1 ms sent_at=2026-11-16T14:10:02.851577+00:00
+
+### client ldapclient-0 -> rhds13-m1 LDAPS, think time 1 ms
+uri=ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636 count=5000 think_ms=1.0
+latency ms: p50=0.481 p99=0.983 max=249.959 avg=0.796
+requests slower than 100.0 ms: 6 (0.12%)
+  msgid=342 uidNumber=88171 latency=250.0 ms sent_at=2026-11-16T14:10:07.267832+00:00
+  msgid=1504 uidNumber=83596 latency=249.8 ms sent_at=2026-11-16T14:10:09.531589+00:00
+  msgid=1771 uidNumber=70796 latency=249.9 ms sent_at=2026-11-16T14:10:10.239840+00:00
+  msgid=2137 uidNumber=97258 latency=249.8 ms sent_at=2026-11-16T14:10:11.121792+00:00
+  msgid=2327 uidNumber=122347 latency=249.7 ms sent_at=2026-11-16T14:10:11.689878+00:00
+  msgid=2361 uidNumber=113877 latency=249.9 ms sent_at=2026-11-16T14:10:11.996830+00:00
+
+### on rhds13-m1 itself: ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636 (no network)
+uri=ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636 count=5000 think_ms=0.0
+latency ms: p50=0.225 p99=0.544 max=250.813 avg=0.937
+requests slower than 100.0 ms: 14 (0.28%)
+  msgid=372 uidNumber=123984 latency=250.7 ms sent_at=2026-11-16T14:10:19.526862+00:00
+  msgid=374 uidNumber=64984 latency=250.6 ms sent_at=2026-11-16T14:10:19.778152+00:00
+  msgid=667 uidNumber=92660 latency=250.7 ms sent_at=2026-11-16T14:10:20.103148+00:00
+  msgid=881 uidNumber=135599 latency=250.8 ms sent_at=2026-11-16T14:10:20.405010+00:00
+  msgid=1039 uidNumber=53621 latency=250.7 ms sent_at=2026-11-16T14:10:20.698106+00:00
+  msgid=1142 uidNumber=93268 latency=250.8 ms sent_at=2026-11-16T14:10:20.977705+00:00
+  msgid=1340 uidNumber=133449 latency=250.7 ms sent_at=2026-11-16T14:10:21.281676+00:00
+  msgid=1370 uidNumber=113403 latency=250.8 ms sent_at=2026-11-16T14:10:21.540050+00:00
+  msgid=1597 uidNumber=93233 latency=250.7 ms sent_at=2026-11-16T14:10:21.845591+00:00
+  msgid=2111 uidNumber=52081 latency=250.8 ms sent_at=2026-11-16T14:10:22.226687+00:00
+  msgid=2506 uidNumber=138507 latency=250.8 ms sent_at=2026-11-16T14:10:22.575091+00:00
+  msgid=2937 uidNumber=147269 latency=250.8 ms sent_at=2026-11-16T14:10:22.945081+00:00
+  msgid=4036 uidNumber=53631 latency=250.6 ms sent_at=2026-11-16T14:10:23.484065+00:00
+  msgid=4514 uidNumber=98920 latency=250.7 ms sent_at=2026-11-16T14:10:23.857563+00:00
+
+### on rhds13-m1 itself: ldap://localhost:389 (no network)
+uri=ldap://localhost:389 count=5000 think_ms=0.0
+latency ms: p50=0.193 p99=0.502 max=250.814 avg=0.852
+requests slower than 100.0 ms: 13 (0.26%)
+  msgid=65 uidNumber=93608 latency=250.7 ms sent_at=2026-11-16T14:10:27.118102+00:00
+  msgid=179 uidNumber=109376 latency=250.7 ms sent_at=2026-11-16T14:10:27.394035+00:00
+  msgid=372 uidNumber=123984 latency=250.8 ms sent_at=2026-11-16T14:10:27.686058+00:00
+  msgid=968 uidNumber=65476 latency=250.7 ms sent_at=2026-11-16T14:10:28.108437+00:00
+  msgid=1448 uidNumber=66226 latency=250.6 ms sent_at=2026-11-16T14:10:28.471881+00:00
+  msgid=1830 uidNumber=147385 latency=194.4 ms sent_at=2026-11-16T14:10:28.807168+00:00
+  msgid=2213 uidNumber=108486 latency=250.7 ms sent_at=2026-11-16T14:10:29.082039+00:00
+  msgid=2466 uidNumber=148284 latency=250.7 ms sent_at=2026-11-16T14:10:29.385962+00:00
+  msgid=2831 uidNumber=122365 latency=250.8 ms sent_at=2026-11-16T14:10:29.710064+00:00
+  msgid=3605 uidNumber=142354 latency=250.6 ms sent_at=2026-11-16T14:10:30.150034+00:00
+  msgid=3678 uidNumber=128044 latency=250.7 ms sent_at=2026-11-16T14:10:30.419086+00:00
+  msgid=4217 uidNumber=80047 latency=250.7 ms sent_at=2026-11-16T14:10:30.787065+00:00
+  msgid=4536 uidNumber=107671 latency=250.7 ms sent_at=2026-11-16T14:10:31.125448+00:00
+
+### on rhds13-m1 itself: ldapi://%2frun%2fslapd-ldapbench.socket (no network)
+uri=ldapi://%2frun%2fslapd-ldapbench.socket count=5000 think_ms=0.0
+latency ms: p50=0.179 p99=0.524 max=251.035 avg=0.918
+requests slower than 100.0 ms: 15 (0.30%)
+  msgid=56 uidNumber=122936 latency=251.0 ms sent_at=2026-11-16T14:10:34.395959+00:00
+  msgid=494 uidNumber=63230 latency=250.7 ms sent_at=2026-11-16T14:10:34.760979+00:00
+  msgid=672 uidNumber=77790 latency=250.7 ms sent_at=2026-11-16T14:10:35.052090+00:00
+  msgid=1177 uidNumber=119951 latency=250.6 ms sent_at=2026-11-16T14:10:35.417107+00:00
+  msgid=1638 uidNumber=66502 latency=243.3 ms sent_at=2026-11-16T14:10:35.766048+00:00
+  msgid=1865 uidNumber=83370 latency=250.6 ms sent_at=2026-11-16T14:10:36.068143+00:00
+  msgid=1904 uidNumber=140521 latency=250.6 ms sent_at=2026-11-16T14:10:36.328408+00:00
+  msgid=3403 uidNumber=65308 latency=134.8 ms sent_at=2026-11-16T14:10:36.872860+00:00
+  msgid=3577 uidNumber=105302 latency=250.7 ms sent_at=2026-11-16T14:10:37.046655+00:00
+  msgid=3593 uidNumber=79622 latency=250.6 ms sent_at=2026-11-16T14:10:37.301236+00:00
+  msgid=3942 uidNumber=118272 latency=250.8 ms sent_at=2026-11-16T14:10:37.625207+00:00
+  msgid=4237 uidNumber=132733 latency=250.6 ms sent_at=2026-11-16T14:10:37.936103+00:00
+  msgid=4277 uidNumber=108152 latency=249.9 ms sent_at=2026-11-16T14:10:38.195835+00:00
+  msgid=4353 uidNumber=108541 latency=250.7 ms sent_at=2026-11-16T14:10:38.462248+00:00
+  msgid=4959 uidNumber=98055 latency=250.7 ms sent_at=2026-11-16T14:10:38.829465+00:00
+
+### reference: client ldapclient-0 -> openldap-m1 LDAPS
+uri=ldaps://openldap-m1.echang.tamlab.rdu2.redhat.com:636 count=5000 think_ms=0.0
+latency ms: p50=0.349 p99=1.205 max=4.018 avg=0.462
+requests slower than 100.0 ms: 0 (0.00%)

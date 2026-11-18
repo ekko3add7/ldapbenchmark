@@ -1,0 +1,8 @@
+A) foreground only (idle server)
+  latency ms: p50=0.191 p99=0.405 max=250.829 avg=0.751
+  requests slower than 3.0 ms: 11 (0.22%)
+  slow (>3ms) buckets: 3-5ms=0 5-50ms=0 50-200ms=0 >=200ms=11
+B) foreground + background connection sending every 2 ms
+  latency ms: p50=0.174 p99=0.365 max=250.952 avg=0.236
+  requests slower than 3.0 ms: 1 (0.02%)
+  slow (>3ms) buckets: 3-5ms=0 5-50ms=0 50-200ms=0 >=200ms=1

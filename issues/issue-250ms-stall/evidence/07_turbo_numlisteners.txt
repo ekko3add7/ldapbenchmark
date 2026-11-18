@@ -1,0 +1,28 @@
+original: nsslapd-enable-turbo-mode: on nsslapd-numlisteners: 1 
+=== V1 turbo=on numlisteners=1
+nsslapd-enable-turbo-mode: on nsslapd-numlisteners: 1 
+ct-list threads: 1
+  local ldapi: latency ms: p50=0.206 p99=0.459 max=250.767 avg=0.553 requests slower than 100.0 ms: 14 (0.14%) 
+  local ldap: latency ms: p50=0.159 p99=0.389 max=250.834 avg=0.544 requests slower than 100.0 ms: 15 (0.15%) 
+  client ldaps: latency ms: p50=0.297 p99=3.431 max=251.033 avg=0.766 requests slower than 100.0 ms: 15 (0.15%) 
+=== V2 turbo=off numlisteners=1
+nsslapd-enable-turbo-mode: off nsslapd-numlisteners: 1 
+ct-list threads: 1
+  local ldapi: latency ms: p50=0.240 p99=0.508 max=250.994 avg=0.855 requests slower than 100.0 ms: 25 (0.25%) 
+  local ldap: latency ms: p50=0.188 p99=0.422 max=250.918 avg=1.094 requests slower than 100.0 ms: 37 (0.37%) 
+  client ldaps: latency ms: p50=0.376 p99=1.487 max=251.248 avg=1.108 requests slower than 100.0 ms: 28 (0.28%) 
+=== V3 turbo=on numlisteners=4
+nsslapd-enable-turbo-mode: on nsslapd-numlisteners: 4 
+ct-list threads: 4
+  local ldapi: latency ms: p50=0.170 p99=0.377 max=250.868 avg=0.615 requests slower than 100.0 ms: 17 (0.17%) 
+  local ldap: latency ms: p50=0.129 p99=0.317 max=250.822 avg=0.571 requests slower than 100.0 ms: 17 (0.17%) 
+  client ldaps: latency ms: p50=0.294 p99=4.013 max=251.184 avg=0.853 requests slower than 100.0 ms: 15 (0.15%) 
+=== V4 turbo=off numlisteners=4
+nsslapd-enable-turbo-mode: off nsslapd-numlisteners: 4 
+ct-list threads: 4
+  local ldapi: latency ms: p50=0.234 p99=0.892 max=251.109 avg=1.990 requests slower than 100.0 ms: 92 (0.92%) 
+  local ldap: latency ms: p50=0.189 p99=0.452 max=250.909 avg=0.798 requests slower than 100.0 ms: 25 (0.25%) 
+  client ldaps: latency ms: p50=0.353 p99=0.742 max=251.168 avg=0.946 requests slower than 100.0 ms: 23 (0.23%) 
+=== restore turbo=on numlisteners=1
+nsslapd-enable-turbo-mode: on nsslapd-numlisteners: 1 
+ct-list threads: 1

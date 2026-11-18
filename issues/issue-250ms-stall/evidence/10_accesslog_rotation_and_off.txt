@@ -1,0 +1,28 @@
+# rhds13-m1, 2026-11-16. Is the 250 ms delay caused by access log rotation or access log writing?
+
+## Access log rotation settings and rotated files (local time -0500)
+nsslapd-accesslog-maxlogsize: 100
+nsslapd-accesslog-maxlogsperdir: 10
+nsslapd-accesslog-logrotationtime: 1
+nsslapd-accesslog-logrotationtimeunit: day
+nsslapd-accesslog-logbuffering: on
+
+LOGINFO:Log file created at: 16/Nov/2026:09:46:39 (1794840399)
+LOGINFO:Previous Log File:/var/log/dirsrv/slapd-ldapbench/access.20261116-085233 (1794837153) (105236196)
+LOGINFO:Previous Log File:/var/log/dirsrv/slapd-ldapbench/access.20261116-085214 (1794837134) (105364222)
+LOGINFO:Previous Log File:/var/log/dirsrv/slapd-ldapbench/access.20261116-085220 (1794837140) (105363920)
+LOGINFO:Previous Log File:/var/log/dirsrv/slapd-ldapbench/access.20261116-085226 (1794837146) (105363531)
+
+Rotations: 08:52:14, 08:52:20, 08:52:26, 08:52:33 (during a high-load test, 100 MB in ~6 s), 09:46:39.
+Delay tests: 08:54:58-08:55:08 (22 delays), 09:09:50-09:10:40, 09:55 (14 delays), 09:57 (12 delays) -> no rotation during any of them.
+
+## Same test with access log ON and OFF (LDAPI, one connection, 10,000 sequential searches, client-side timing)
+access log ON (current):
+  run 1: p50=0.231 ms  max=251.0 ms  >100ms: 14 (0.14%)  slow values: [251, 251, 251]...
+  run 2: p50=0.151 ms  max=250.9 ms  >100ms: 16 (0.16%)  slow values: [251, 251, 251]...
+access log OFF:
+  nsslapd-accesslog-logging-enabled: off
+  run 1: p50=0.168 ms  max=250.9 ms  >100ms: 15 (0.15%)  slow values: [251, 251, 251]...
+  run 2: p50=0.110 ms  max=251.0 ms  >100ms: 21 (0.21%)  slow values: [251, 251, 251]...
+restored:
+  nsslapd-accesslog-logging-enabled: on

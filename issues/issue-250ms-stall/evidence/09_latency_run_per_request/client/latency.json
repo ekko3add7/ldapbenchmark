@@ -1,0 +1,92 @@
+{
+  "run_id": "latency-20261116T135315Z",
+  "product": "rhds13",
+  "uri": "ldaps://rhds13-m1.echang.tamlab.rdu2.redhat.com:636",
+  "server_addr": "10.6.217.247",
+  "local_ip": "10.6.217.139",
+  "samples": 2000,
+  "attributes": [
+    "uid",
+    "uidNumber",
+    "gidNumber",
+    "cn",
+    "homeDirectory",
+    "loginShell"
+  ],
+  "bind_dn": "",
+  "marker": "ldapbench-latency-end-20261116t135315z",
+  "phases": {
+    "ping": {
+      "start_utc": "2026-11-16T13:54:55.194Z",
+      "end_utc": "2026-11-16T13:54:57.391Z",
+      "ms": {
+        "count": 200,
+        "avg": 0.319,
+        "p50": 0.27,
+        "p95": 0.355,
+        "p99": 0.497,
+        "max": 4.59,
+        "slow": 0,
+        "slow_ms": 10
+      }
+    },
+    "tcp": {
+      "start_utc": "2026-11-16T13:54:57.391Z",
+      "end_utc": "2026-11-16T13:54:58.503Z",
+      "ms": {
+        "count": 200,
+        "avg": 0.422,
+        "p50": 0.408,
+        "p95": 0.56,
+        "p99": 0.813,
+        "max": 0.935,
+        "slow": 0,
+        "slow_ms": 10
+      }
+    },
+    "tls": {
+      "start_utc": "2026-11-16T13:54:58.503Z",
+      "end_utc": "2026-11-16T13:54:58.771Z",
+      "ms": {
+        "count": 50,
+        "avg": 4.95,
+        "p50": 4.702,
+        "p95": 6.547,
+        "p99": 8.648,
+        "max": 8.648,
+        "slow": 0,
+        "slow_ms": 10
+      }
+    },
+    "wire": {
+      "start_utc": "2026-11-16T13:55:01.976Z",
+      "end_utc": "2026-11-16T13:55:04.435Z",
+      "ms": {
+        "count": 2000,
+        "avg": 1.225,
+        "p50": 0.447,
+        "p95": 0.664,
+        "p99": 1.172,
+        "max": 251.284,
+        "slow": 6,
+        "slow_ms": 10
+      },
+      "bad": 0
+    },
+    "ldap3": {
+      "start_utc": "2026-11-16T13:55:04.552Z",
+      "end_utc": "2026-11-16T13:55:08.885Z",
+      "ms": {
+        "count": 2000,
+        "avg": 2.164,
+        "p50": 1.166,
+        "p95": 2.074,
+        "p99": 3.212,
+        "max": 251.708,
+        "slow": 7,
+        "slow_ms": 10
+      },
+      "bad": 0
+    }
+  }
+}

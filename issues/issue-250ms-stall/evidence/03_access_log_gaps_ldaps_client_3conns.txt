@@ -1,0 +1,91 @@
+conn=898 from=10.6.217.139 searches=2000 gap p50=0.298 ms p99=0.892 ms max=250.6 ms gaps>100ms=9
+  gap=250.4 ms before op=216
+    [16/Nov/2026:08:54:58.926265030 -0500] conn=898 op=215 RESULT err=0 tag=101 nentries=1 wqtime=0.000028668 wtime=0.000104020 optime=0.000136415 etime=0.000240249
+    [16/Nov/2026:08:54:59.176678028 -0500] conn=898 op=216 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=70367)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:54:59.177001253 -0500] conn=898 op=216 RESULT err=0 tag=101 nentries=1 wqtime=0.000062832 wtime=0.000224685 optime=0.000325657 etime=0.000550102
+  gap=250.5 ms before op=470
+    [16/Nov/2026:08:54:59.282795302 -0500] conn=898 op=469 RESULT err=0 tag=101 nentries=1 wqtime=0.000025351 wtime=0.000099995 optime=0.000123579 etime=0.000223425
+    [16/Nov/2026:08:54:59.533325836 -0500] conn=898 op=470 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=98105)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:54:59.533631367 -0500] conn=898 op=470 RESULT err=0 tag=101 nentries=1 wqtime=0.000018550 wtime=0.000186634 optime=0.000308878 etime=0.000495159
+  gap=250.3 ms before op=502
+    [16/Nov/2026:08:54:59.552080941 -0500] conn=898 op=501 RESULT err=0 tag=101 nentries=1 wqtime=0.000044516 wtime=0.000130069 optime=0.000127881 etime=0.000257775
+    [16/Nov/2026:08:54:59.802420750 -0500] conn=898 op=502 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=50401)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:54:59.802692490 -0500] conn=898 op=502 RESULT err=0 tag=101 nentries=1 wqtime=0.000017149 wtime=0.000156723 optime=0.000273027 etime=0.000429545
+  gap=250.5 ms before op=574
+    [16/Nov/2026:08:54:59.834621500 -0500] conn=898 op=573 RESULT err=0 tag=101 nentries=1 wqtime=0.000027676 wtime=0.000085720 optime=0.000100707 etime=0.000186271
+    [16/Nov/2026:08:55:00.085086734 -0500] conn=898 op=574 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=97915)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:00.085331355 -0500] conn=898 op=574 RESULT err=0 tag=101 nentries=1 wqtime=0.000019452 wtime=0.000250459 optime=0.000247035 etime=0.000497346
+  gap=250.4 ms before op=1047
+    [16/Nov/2026:08:55:00.297052307 -0500] conn=898 op=1046 RESULT err=0 tag=101 nentries=1 wqtime=0.000030618 wtime=0.000094346 optime=0.000108034 etime=0.000202207
+    [16/Nov/2026:08:55:00.547452968 -0500] conn=898 op=1047 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=72968)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:00.547695097 -0500] conn=898 op=1047 RESULT err=0 tag=101 nentries=1 wqtime=0.000046090 wtime=0.000198250 optime=0.000243283 etime=0.000441323
+  gap=250.5 ms before op=1278
+    [16/Nov/2026:08:55:00.639324928 -0500] conn=898 op=1277 RESULT err=0 tag=101 nentries=1 wqtime=0.000029165 wtime=0.000089427 optime=0.000162030 etime=0.000251288
+    [16/Nov/2026:08:55:00.889870415 -0500] conn=898 op=1278 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=90723)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:00.890167952 -0500] conn=898 op=1278 RESULT err=0 tag=101 nentries=1 wqtime=0.000158311 wtime=0.000335101 optime=0.000300776 etime=0.000635710
+  gap=250.4 ms before op=1548
+    [16/Nov/2026:08:55:01.009441311 -0500] conn=898 op=1547 RESULT err=0 tag=101 nentries=1 wqtime=0.000175273 wtime=0.000266947 optime=0.000224598 etime=0.000491295
+    [16/Nov/2026:08:55:01.259802408 -0500] conn=898 op=1548 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=95675)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:01.260080886 -0500] conn=898 op=1548 RESULT err=0 tag=101 nentries=1 wqtime=0.000094195 wtime=0.000257866 optime=0.000281130 etime=0.000538861
+  gap=250.4 ms before op=1674
+    [16/Nov/2026:08:55:01.320612556 -0500] conn=898 op=1673 RESULT err=0 tag=101 nentries=1 wqtime=0.000024626 wtime=0.000091887 optime=0.000127101 etime=0.000218818
+    [16/Nov/2026:08:55:01.571053885 -0500] conn=898 op=1674 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=77323)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:01.571336898 -0500] conn=898 op=1674 RESULT err=0 tag=101 nentries=1 wqtime=0.000066391 wtime=0.000258291 optime=0.000285063 etime=0.000543172
+  gap=250.6 ms before op=1845
+    [16/Nov/2026:08:55:01.644076143 -0500] conn=898 op=1844 RESULT err=0 tag=101 nentries=1 wqtime=0.000030496 wtime=0.000099491 optime=0.000126121 etime=0.000225463
+    [16/Nov/2026:08:55:01.894655110 -0500] conn=898 op=1845 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=50784)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:01.895047781 -0500] conn=898 op=1845 RESULT err=0 tag=101 nentries=1 wqtime=0.000062512 wtime=0.000303197 optime=0.000395261 etime=0.000698306
+conn=899 from=10.6.217.139 searches=2000 gap p50=0.324 ms p99=1.018 ms max=250.8 ms gaps>100ms=6
+  gap=250.5 ms before op=301
+    [16/Nov/2026:08:55:02.112060413 -0500] conn=899 op=300 RESULT err=0 tag=101 nentries=1 wqtime=0.000026021 wtime=0.000097590 optime=0.000113663 etime=0.000211089
+    [16/Nov/2026:08:55:02.362599185 -0500] conn=899 op=301 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=144232)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:02.362992941 -0500] conn=899 op=301 RESULT err=0 tag=101 nentries=1 wqtime=0.000084376 wtime=0.000271804 optime=0.000396559 etime=0.000668147
+  gap=250.5 ms before op=491
+    [16/Nov/2026:08:55:02.451122838 -0500] conn=899 op=490 RESULT err=0 tag=101 nentries=1 wqtime=0.000030214 wtime=0.000095130 optime=0.000110278 etime=0.000205257
+    [16/Nov/2026:08:55:02.701575442 -0500] conn=899 op=491 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=68452)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:02.701994866 -0500] conn=899 op=491 RESULT err=0 tag=101 nentries=1 wqtime=0.000049304 wtime=0.000211992 optime=0.000324848 etime=0.000536595
+  gap=250.5 ms before op=1799
+    [16/Nov/2026:08:55:03.319101473 -0500] conn=899 op=1798 RESULT err=0 tag=101 nentries=1 wqtime=0.000026153 wtime=0.000105527 optime=0.000146130 etime=0.000251488
+    [16/Nov/2026:08:55:03.569559321 -0500] conn=899 op=1799 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=74537)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:03.569872009 -0500] conn=899 op=1799 RESULT err=0 tag=101 nentries=1 wqtime=0.000084163 wtime=0.000267886 optime=0.000315752 etime=0.000583447
+  gap=250.8 ms before op=1946
+    [16/Nov/2026:08:55:03.651759318 -0500] conn=899 op=1945 RESULT err=0 tag=101 nentries=1 wqtime=0.000022860 wtime=0.000076856 optime=0.000124785 etime=0.000201499
+    [16/Nov/2026:08:55:03.902535292 -0500] conn=899 op=1946 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=120520)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:03.902862074 -0500] conn=899 op=1946 RESULT err=0 tag=101 nentries=1 wqtime=0.000073551 wtime=0.000232989 optime=0.000327374 etime=0.000560010
+  gap=250.3 ms before op=1989
+    [16/Nov/2026:08:55:03.926266147 -0500] conn=899 op=1988 RESULT err=0 tag=101 nentries=1 wqtime=0.000030741 wtime=0.000120115 optime=0.000136142 etime=0.000256103
+    [16/Nov/2026:08:55:04.176578184 -0500] conn=899 op=1989 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=71529)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:04.176850294 -0500] conn=899 op=1989 RESULT err=0 tag=101 nentries=1 wqtime=0.000019795 wtime=0.000169984 optime=0.000274263 etime=0.000444051
+  gap=250.4 ms before op=1993
+    [16/Nov/2026:08:55:04.179155230 -0500] conn=899 op=1992 RESULT err=0 tag=101 nentries=1 wqtime=0.000048693 wtime=0.000168640 optime=0.000170091 etime=0.000338393
+    [16/Nov/2026:08:55:04.429529978 -0500] conn=899 op=1993 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=92675)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:04.429832973 -0500] conn=899 op=1993 RESULT err=0 tag=101 nentries=1 wqtime=0.000073909 wtime=0.000231407 optime=0.000303906 etime=0.000535080
+conn=900 from=10.6.217.139 searches=2000 gap p50=1.029 ms p99=3.303 ms max=250.6 ms gaps>100ms=7
+  gap=250.4 ms before op=202
+    [16/Nov/2026:08:55:04.814841812 -0500] conn=900 op=201 RESULT err=0 tag=101 nentries=1 wqtime=0.000044864 wtime=0.000151579 optime=0.000179937 etime=0.000331348
+    [16/Nov/2026:08:55:05.065231809 -0500] conn=900 op=202 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=86450)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:05.065502949 -0500] conn=900 op=202 RESULT err=0 tag=101 nentries=1 wqtime=0.000059279 wtime=0.000208923 optime=0.000272946 etime=0.000481668
+  gap=250.4 ms before op=295
+    [16/Nov/2026:08:55:05.191130665 -0500] conn=900 op=294 RESULT err=0 tag=101 nentries=1 wqtime=0.000056930 wtime=0.000132607 optime=0.000126025 etime=0.000258462
+    [16/Nov/2026:08:55:05.441548621 -0500] conn=900 op=295 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=66667)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:05.441852961 -0500] conn=900 op=295 RESULT err=0 tag=101 nentries=1 wqtime=0.000067301 wtime=0.000218651 optime=0.000306035 etime=0.000524511
+  gap=250.3 ms before op=308
+    [16/Nov/2026:08:55:05.468348271 -0500] conn=900 op=307 RESULT err=0 tag=101 nentries=1 wqtime=0.000047238 wtime=0.000132776 optime=0.000150637 etime=0.000283234
+    [16/Nov/2026:08:55:05.718692629 -0500] conn=900 op=308 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=102302)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:05.719041922 -0500] conn=900 op=308 RESULT err=0 tag=101 nentries=1 wqtime=0.000018046 wtime=0.000163546 optime=0.000351063 etime=0.000514396
+  gap=250.4 ms before op=492
+    [16/Nov/2026:08:55:05.977102625 -0500] conn=900 op=491 RESULT err=0 tag=101 nentries=1 wqtime=0.000044884 wtime=0.000139175 optime=0.000145104 etime=0.000284113
+    [16/Nov/2026:08:55:06.227522563 -0500] conn=900 op=492 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=68452)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:06.227765252 -0500] conn=900 op=492 RESULT err=0 tag=101 nentries=1 wqtime=0.000071141 wtime=0.000221283 optime=0.000240069 etime=0.000461134
+  gap=250.6 ms before op=665
+    [16/Nov/2026:08:55:06.447573202 -0500] conn=900 op=664 RESULT err=0 tag=101 nentries=1 wqtime=0.000039341 wtime=0.000092813 optime=0.000111491 etime=0.000204172
+    [16/Nov/2026:08:55:06.698187755 -0500] conn=900 op=665 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=53809)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:06.698445354 -0500] conn=900 op=665 RESULT err=0 tag=101 nentries=1 wqtime=0.000056242 wtime=0.000200124 optime=0.000259147 etime=0.000459092
+  gap=250.4 ms before op=848
+    [16/Nov/2026:08:55:06.948478009 -0500] conn=900 op=847 RESULT err=0 tag=101 nentries=1 wqtime=0.000040522 wtime=0.000111441 optime=0.000125665 etime=0.000236955
+    [16/Nov/2026:08:55:07.198897279 -0500] conn=900 op=848 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=90951)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:07.199201330 -0500] conn=900 op=848 RESULT err=0 tag=101 nentries=1 wqtime=0.000071074 wtime=0.000232195 optime=0.000307797 etime=0.000539773
+  gap=250.4 ms before op=1216
+    [16/Nov/2026:08:55:07.657080538 -0500] conn=900 op=1215 RESULT err=0 tag=101 nentries=1 wqtime=0.000026562 wtime=0.000103847 optime=0.000128849 etime=0.000232544
+    [16/Nov/2026:08:55:07.907461726 -0500] conn=900 op=1216 SRCH base="ou=People,dc=ldapbench,dc=lab" scope=2 filter="(&(uidNumber=75349)(objectClass=posixAccount))" attrs="uid uidNumber gidNumber cn homeDirectory loginShell"
+    [16/Nov/2026:08:55:07.907732195 -0500] conn=900 op=1216 RESULT err=0 tag=101 nentries=1 wqtime=0.000067731 wtime=0.000216497 optime=0.000277752 etime=0.000494099
